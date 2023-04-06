@@ -1,7 +1,7 @@
-$primary: #25cbff;
-$accent: #f90;
-$tertiary: #0d5079;
+$primary: var(--primary);
+$accent: var(--accent);
+$tertiary: var(--tertiary);
 
-$text: #f0f0f0;
-$background: #161616;
-$header-background: #5b5b5b;
+$text: var(--text);
+$background: var(--background);
+$header-background: var(--header-background);

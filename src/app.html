@@ -13,6 +13,16 @@
 		/>
 
 		<style>
+			:root {
+				--primary: #25cbff;
+				--accent: #f90;
+				--tertiary: #0d5079;
+
+				--text: #f0f0f0;
+				--background: #161616;
+				--header-background: #5b5b5b;
+			}
+
 			* {
 				margin: 0;
 				padding: 0;
@@ -26,6 +36,17 @@
 			body {
 				width: 100vw;
 				min-height: 100vh;
+
+				background-color: var(--background);
+				color: var(--text);
+			}
+
+			::-webkit-scrollbar, ::-webkit-slider-track {
+				background-color: #303030;
+			}
+
+			::-webkit-scrollbar-thumb {
+				background-color: #707070;
 			}
 		</style>
 
