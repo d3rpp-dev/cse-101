@@ -82,6 +82,8 @@
 	@use '$lib/sass/colours' as c;
 
 	$icon_size: 48px;
+	$drop_shadow: drop-shadow(2px 2px 2px c.$background);
+
 	header {
 		position: fixed;
 		top: 0;
@@ -113,9 +115,12 @@
 				text-decoration: none;
 
 				padding: 0 h.$main_height;
+				height: 100%;
+				display: grid;
+				place-items: center;
 
 				&:hover .title {
-					filter: drop-shadow(2px 2px 2px c.$background);
+					filter: $drop_shadow;
 				}
 
 				.title {
@@ -123,6 +128,8 @@
 					line-height: 48px;
 					font-weight: 300;
 					color: c.$text;
+					
+					transition: filter 100ms ease;
 
 					filter: none;
 
@@ -163,7 +170,7 @@
 				}
 
 				:global(div:hover svg) {
-					filter: drop-shadow(2px 2px 2px c.$background);
+					filter: $drop_shadow;
 				}
 			}
 		}
