@@ -1,85 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" style="background-color:#161616;">
-    <head>
-        <meta charset="UTF-8">
-        <title>PBTech - Computers & Tablets</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./styles/global.css" rel="stylesheet" type="text/css">
 
-        <link rel="icon" href="./images/favicon.svg">
+<head>
+    <meta charset="UTF-8">
+    <title>PBTech - Computers & Tablets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/global.css" rel="stylesheet" type="text/css">
+    <link href="./styles/pages/login.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="./images/favicon.svg">
+</head>
 
-        <body>
-            <nav class="menu">
-                <a href="Cart.html">CART</a>
-                <a href="Login.html">LOGIN</a>
-                <a href="index.html">HOME</a>
-            </nav>
-            
-            <script>
-                function validateForm() {
-    
-                const name = document.getElementById("name").value;
-                const email = document.getElementById("email").value;
-                const password = document.getElementById("password").value;
-                const confirmPassword = document.getElementById("confirmPassword").value;
-                
-    
-                const nameRegex = /^[A-Za-z ]{2,30}$/;
-                const emailRegex = /^[^@]+@[^@]+\.[^@]+$/;
-                const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-                
-    
-                if (!nameRegex.test(name)) {
-                    alert("Please enter a valid name (2-30 characters, letters and spaces only).");
-                    return false;
-                }
-                
-    
-                if (!emailRegex.test(email)) {
-                    alert("Please enter a valid email address.");
-                    return false;
-                }
-                
-                if (!passwordRegex.test(password)) {
-                    alert("Please enter a valid password (at least 8 characters, one letter and one number).");
-                    return false;
-                }
-                
-                if (password !== confirmPassword) {
-                    alert("Passwords do not match.");
-                    return false;
-                }
-                
-                alert("Form is valid!");
-                return true;
+<body>
+
+    <script>
+        function validateForm() {
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+
+            const nameRegex = /^[A-Za-z ]{2,30}$/;
+            const emailRegex = /^[^@]+@[^@]+\.[^@]+$/;
+            const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+
+
+          
+
+
+            if (!emailRegex.test(email) || !nameRegex.test(name)) {
+                alert("Please enter a valid email address or Password.");
+                return false;
             }
-            </script>
-            <body style="background-color:#161616;">
-                
-                <h1 style="background-color:#161616; color: #f0f0f0;">Signup Form</h1>
-                <form onsubmit="return validateForm()" style="background-color:#161616; color: #f0f0f0;">
-                    <label for="name" style="background-color:#161616; color: #f0f0f0;">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <br>
-                    
-                    <label for="email" style="background-color:#161616; color: #f0f0f0;">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <br>
-                    
-                    <label for="password" style="background-color:#161616; color: #f0f0f0;">Password:</label>
-                    <input type="password" id="password" name="password" required>
-                    
-                    <br>
-                    
-                    <label for="confirmPassword" style="background-color:#161616; color: #f0f0f0;">Confirm Password:</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" required>
-                    
-                    <br>
-                    
-                    <button type="submit" style="background-color:#161616; color: #f0f0f0;">Signup</button>
-                </form>
-        </body>
-</html>
 
+
+            alert("Form is valid!");
+            return true;
+        }
+    </script>
+    <div class="l"></div>
+
+    <div class="r">
+        <h1>Login</h1><br>
+        <form onsubmit="return validateForm()" style="background-color:#161616; color: #f0f0f0;">
+            <label for="name" style="background-color:#161616; color: #f0f0f0;">E-mail or Username</label>
+            <br>
+            <input type="text" id="name" name="name" required style="color: #f0f0f0;">
+            <br>
+            <br>
+
+            <label for="password" style="background-color:#161616; color: #f0f0f0;">Password</label>
+            <br>
+            <input type="password" id="password" name="password" required style="color: #f0f0f0;">
+            <p style="color: #6B8CFF;">Forgot your password?</p>
+            
+            <br>
+            <button type="submit" style="background-color:#FF9900; color: #161616; padding: 4px;">Login</button>
+        </form>
+    </div>
+</html>
