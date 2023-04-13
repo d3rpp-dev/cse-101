@@ -36,6 +36,10 @@
     overflow: hidden;
     background-color: #0d5078;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     a {
         float: left;
         font-size: 16px;
@@ -78,7 +82,7 @@
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
-    
+
         a {
             float: none;
             color: black;
@@ -86,16 +90,45 @@
             padding: 12px 16px;
             text-decoration: none;
             display: block;
-            text-align: left;  
-    
+            text-align: left;
+
             &:hover {
                 background-color: #ddd;
             }
         }
     }
-    
+
     &:hover .dropdown-content {
         display: block;
-    }    
+    }
 }
 
+.head1 .r {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    background-color: transparent;
+
+    padding-right: 48px;
+
+    p {
+        line-height: 24px;
+    }
+
+    p.deal {
+        background-color: #0d5078;
+        color: #ff9900;
+        // font-family: Arial;
+        font-weight: bold;
+        font-style: italic;
+
+        margin-right: 12px;
+    }
+
+    p.d-text {
+        background-color: #0d5078;
+        color: #f9f9f9;
+    }
+}
