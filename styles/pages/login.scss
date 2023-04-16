@@ -26,6 +26,14 @@ body {
 
 .l {
     // leave blank
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    marquee {
+        height: 100%;
+    }
 }
 
 .r {

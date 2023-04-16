@@ -17,6 +17,16 @@ body div * {
   background-color: transparent;
 }
 
+.l {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.l marquee {
+  height: 100%;
+}
+
 .r {
   display: flex;
   flex-direction: column;
