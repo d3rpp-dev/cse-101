@@ -1,7 +1,22 @@
-body {
+main.headphones {
+  padding: 0 5vw;
+  display: grid;
+  grid-template-columns: 30vw 30vw 30vw;
+}
+
+main.headphones * {
   background-color: transparent;
 }
 
-img {
-  background-color: transparent;
+.xm5 {
+  width: 100%;
+}
+.xm5 img {
+  width: 100%;
+  background-color: rgba(155, 155, 155, 0.2);
+  border-radius: 4px;
+}
+
+.words .stars {
+  width: 100px;
 }/*# sourceMappingURL=headphones.css.map */

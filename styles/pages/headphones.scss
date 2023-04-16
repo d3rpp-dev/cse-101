@@ -1,3 +1,29 @@
-.images {
+main.headphones {
+    padding: 0 5vw;
+
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+}
+
+
+main.headphones * {
     background-color: transparent;
+
+}
+
+.xm5 {
+    width: 100%;
+
+
+    img {
+        width: 100%;
+
+        background-color: rgba(#9B9B9B, 0.2);
+        border-radius: 4px;
+    }
+}
+
+.words .stars {
+    // height: 50px;
+    width: 100px;
 }
