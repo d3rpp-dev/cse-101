@@ -17,14 +17,38 @@ body div * {
   background-color: transparent;
 }
 
+@keyframes scroll {
+  from {
+    background-position: 0 500px;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
 .l {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.l marquee {
-  height: 100%;
+.l div {
+  animation-name: scroll;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  background-repeat: repeat-y;
+  background-size: auto 500px;
+  margin: 0 24px;
+}
+.l .l {
+  background-image: url("/images/slider1.png");
+}
+.l .m {
+  background-image: url("/images/slider2.png");
+  animation-direction: reverse;
+}
+.l .r {
+  background-image: url("/images/slider3.png");
 }
 
 .r {

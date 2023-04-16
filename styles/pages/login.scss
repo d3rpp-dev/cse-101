@@ -1,3 +1,5 @@
+$col-height: 500px;
+
 body {
     display: grid;
     grid-template-rows: 100%;
@@ -24,6 +26,16 @@ body {
     }
 }
 
+@keyframes scroll {
+    from {
+        background-position: 0 $col-height;
+    }
+
+    to {
+        background-position: 0 0;
+    }
+}
+
 .l {
     // leave blank
     display:flex;
@@ -31,8 +43,29 @@ body {
     justify-content: space-between;
     align-items: center;
     
-    marquee {
-        height: 100%;
+    div {
+        animation-name: scroll;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+
+        background-repeat: repeat-y;
+        background-size: auto $col-height;
+
+        margin: 0 24px;
+    }
+
+    .l {
+        background-image: url("/images/slider1.png");
+    }
+
+    .m {
+        background-image: url("/images/slider2.png");
+        animation-direction: reverse;
+    }
+
+    .r {
+        background-image: url("/images/slider3.png");
     }
 }
 
