@@ -19,7 +19,7 @@ body div * {
 
 @keyframes scroll {
   from {
-    background-position: 0 500px;
+    background-position: 0 700px;
   }
   to {
     background-position: 0 0;
@@ -37,7 +37,7 @@ body div * {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   background-repeat: repeat-y;
-  background-size: auto 500px;
+  background-size: auto 700px;
   margin: 0 24px;
 }
 .l .l {
