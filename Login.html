@@ -85,8 +85,13 @@
 				}
 
 				alert('Form is valid!');
-				return true;
+				go_home();
+                return true;
 			}
-		</script>
+		
+            const go_home = () => {
+                window.location.href = "/index.html";
+            }
+        </script>
 	</body>
 </html>
