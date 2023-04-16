@@ -28,11 +28,11 @@ body {
 
 @keyframes scroll {
     from {
-        background-position: 0 $col-height;
+        background-position: 50% $col-height;
     }
 
     to {
-        background-position: 0 0;
+        background-position: 50% 0;
     }
 }
 

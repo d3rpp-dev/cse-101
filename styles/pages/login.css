@@ -19,10 +19,10 @@ body div * {
 
 @keyframes scroll {
   from {
-    background-position: 0 500px;
+    background-position: 50% 500px;
   }
   to {
-    background-position: 0 0;
+    background-position: 50% 0;
   }
 }
 .l {
