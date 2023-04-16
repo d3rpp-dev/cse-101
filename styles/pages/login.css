@@ -41,16 +41,16 @@ body div.r * {
   height: 100vh;
 }
 .l .l {
-  animation-duration: 20s;
+  animation-duration: 19s;
   background-image: url("/images/slider1.png");
 }
 .l .m {
-  animation-duration: 25s;
+  animation-duration: 23.75s;
   background-image: url("/images/slider2.png");
   animation-direction: reverse;
 }
 .l .r {
-  animation-duration: 40s;
+  animation-duration: 38s;
   background-image: url("/images/slider3.png");
 }
 
