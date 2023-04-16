@@ -19,7 +19,7 @@ body div * {
 
 @keyframes scroll {
   from {
-    background-position: 50% 500px;
+    background-position: 50% 700px;
   }
   to {
     background-position: 50% 0;
@@ -37,8 +37,7 @@ body div * {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   background-repeat: repeat-y;
-  background-size: auto 500px;
-  margin: 0 24px;
+  background-size: auto 700px;
 }
 .l .l {
   background-image: url("/images/slider1.png");
