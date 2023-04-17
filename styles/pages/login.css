@@ -21,7 +21,7 @@ body div.r * {
 
 @keyframes scroll {
   from {
-    background-position: 50% 700px;
+    background-position: 50% 1400px;
   }
   to {
     background-position: 50% 0;
@@ -36,21 +36,21 @@ body div.r * {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   background-repeat: repeat-y;
-  background-size: auto 700px;
+  background-size: auto 1400px;
   width: 16.6666666667vw;
   height: 100vh;
 }
 .l .l {
-  animation-duration: 19s;
+  animation-duration: 38s;
   background-image: url("/images/slider1.png");
 }
 .l .m {
-  animation-duration: 23.75s;
+  animation-duration: 47.5s;
   background-image: url("/images/slider2.png");
   animation-direction: reverse;
 }
 .l .r {
-  animation-duration: 38s;
+  animation-duration: 76s;
   background-image: url("/images/slider3.png");
 }
 
