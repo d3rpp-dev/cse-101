@@ -17,6 +17,41 @@ body {
 	background-color: #161616;
 	color: #f0f0f0;
 
+	a.back {
+		position: absolute;
+
+		top: 8px;
+		left: 8px;
+
+		width: 64px;
+		height: 64px;
+
+		background-color: #16161680;
+
+		text-align: center;
+		line-height: 64px;
+		font-size: 32px;
+
+		font-family: monospace;
+
+		font-size: 32px;
+
+		text-decoration: none;
+
+		margin: 0;
+
+		border-radius: 4px;
+
+		overflow: hidden;
+
+		transition: color 100ms ease, background-color 250ms ease;
+
+		&:hover {
+			color:#ff9900;
+			background-color: #161616;
+		}
+	}
+
 	div.l,
 	div.r {
 		width: 100%;
@@ -59,18 +94,18 @@ body {
 	}
 
 	.l {
-        animation-duration: $anim-duration;
+		animation-duration: $anim-duration;
 		background-image: url('/images/slider1.png');
 	}
 
 	.m {
-        animation-duration: $anim-duration * 1.25;
+		animation-duration: $anim-duration * 1.25;
 		background-image: url('/images/slider2.png');
 		animation-direction: reverse;
 	}
 
 	.r {
-        animation-duration: $anim-duration * 2;
+		animation-duration: $anim-duration * 2;
 		background-image: url('/images/slider3.png');
 	}
 }
@@ -141,9 +176,9 @@ body {
 					border: 2px solid #ffffff;
 				}
 
-                &:not(:active) {
-                    border: none;
-                }
+				&:not(:active) {
+					border: none;
+				}
 
 				/* Inside auto layout */
 
