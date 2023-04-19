@@ -1,5 +1,6 @@
 main {
   height: calc(100vh - 119px);
+  overflow: visible;
   padding: 10vh clamp(8px, 10vw, 128px);
   display: grid;
   grid-template-columns: 3fr 2fr 1fr 2fr;
@@ -27,6 +28,7 @@ main {
 }
 main .xm5 {
   grid-area: image;
+  overflow: visible;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -37,6 +39,7 @@ main .xm5 img {
   border-radius: 8px;
   aspect-ratio: 1/1;
   width: 90%;
+  box-shadow: 0px 0px 0px 24px #333;
 }
 @media screen and (max-width: 1400px) {
   main .xm5 img {
