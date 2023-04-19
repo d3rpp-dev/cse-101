@@ -8,6 +8,28 @@ body {
   background-color: #161616;
   color: #f0f0f0;
 }
+body a.back {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  width: 64px;
+  height: 64px;
+  background-color: rgba(22, 22, 22, 0.5019607843);
+  text-align: center;
+  line-height: 64px;
+  font-size: 32px;
+  font-family: monospace;
+  font-size: 32px;
+  text-decoration: none;
+  margin: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: color 100ms ease, background-color 250ms ease;
+}
+body a.back:hover {
+  color: #ff9900;
+  background-color: #161616;
+}
 body div.l,
 body div.r {
   width: 100%;
