@@ -1,1 +1,6 @@
-/*# sourceMappingURL=index.css.map */
+.top {
+  height: max(600px, 60vh);
+  display: grid;
+  place-items: center;
+  padding: 0 8px;
+}/*# sourceMappingURL=index.css.map */
