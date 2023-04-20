@@ -8,7 +8,7 @@
 
 	.middle {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 3fr 2fr;
 
 		gap: 32px;
 
@@ -18,7 +18,7 @@
 			width: 100%;
 			background: url('/images/products/apple_macbook.png');
 
-			background-size: contain;
+			background-size: cover;
 			background-repeat: no-repeat;
 			background-position: center center;
 		}
