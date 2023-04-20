@@ -1,3 +1,8 @@
+body {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
 .top {
   height: max(600px, 60vh);
   display: grid;
@@ -49,4 +54,71 @@
 }
 .top .middle .r a:hover {
   background: #ffb545;
+}
+
+.featured {
+  width: 100vw;
+  min-height: 60vh;
+  background-color: #292929;
+  padding: 10vh 12vw;
+}
+.featured .title {
+  font-size: 56px;
+  font-weight: 100;
+  margin-bottom: 64px;
+}
+.featured .grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.featured .grid .item {
+  width: 17vw;
+  height: auto;
+  margin: 8px;
+  border-radius: 8px;
+  box-shadow: 4px 4px 6px 8px rgba(33, 33, 33, 0.5019607843);
+  background-color: #5b5b5b;
+  text-decoration: none;
+  transition: background-color 200ms ease;
+}
+.featured .grid .item:hover {
+  background-color: #434343;
+}
+.featured .grid .item .image {
+  width: 17vw;
+  height: 17vw;
+  background: var(--img);
+  background-position: center center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+.featured .grid .item .text {
+  width: 17vw;
+  height: 152px;
+  padding: 8px 12px;
+}
+.featured .grid .item .text .name {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  height: 52px;
+  width: 100%;
+  overflow: hidden;
+}
+.featured .grid .item .text .r {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100% - 52px);
+}
+.featured .grid .item .text .r .price {
+  font-weight: 700;
+}
+.featured .grid .item .text .r .more {
+  font-weight: 400;
+  margin-right: 12px;
 }/*# sourceMappingURL=index.css.map */

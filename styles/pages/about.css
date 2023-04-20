@@ -1,1 +1,31 @@
-/*# sourceMappingURL=about.css.map */
+.r {
+  padding: 10vh 10vw;
+}
+
+.title {
+  margin: 1em 0;
+}
+.title:not(:first-child) {
+  margin: 2em 0;
+}
+
+.info {
+  margin: 12px 10vw;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+.grid .l .location {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.grid .l .hours {
+  margin-left: 8px;
+}
+
+.contact {
+  font-weight: bold;
+}/*# sourceMappingURL=about.css.map */

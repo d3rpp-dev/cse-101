@@ -1,0 +1,37 @@
+.r {
+	padding: 10vh 10vw;
+}
+
+.title {
+	margin: 1em 0;
+
+	&:not(:first-child) {
+		margin: 2em 0;
+	}
+}
+
+.info {
+	// width: 80%;
+	margin: 12px 10vw;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 24px;
+
+	.l {
+		.location {
+			font-weight: bold;
+			margin-bottom: 8px;
+		}
+
+		.hours {
+			margin-left: 8px;
+		}
+	}
+}
+
+.contact {
+	font-weight: bold;
+}
